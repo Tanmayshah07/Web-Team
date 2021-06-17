@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>E-CELL | WEB TEAM</title>
+</head>
+
+<body>
+    <!-- =====Pre Loader(Yash)===== -->
+    <div id="loader-container"></div>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="button">DEVELOPED & MANAGED BY US</label>
+
+        <label class="logo"><img src="ecell_logo2.png" alt="ecell_logo2" class="ecell"></label>
+        <ul>
+            <li><a href="https://ecell.iith.ac.in/" target="_blank">E-CELL</a></li>
+            <li><a href="https://ecell.iith.ac.in/esummit/index.html" target="_blank">E-SUMMIT</a></li>
+            <li><a href="https://ecell.iith.ac.in/ca/index.html" target="_blank">CA-PROGRAMME</a></li>
+            <li><a href="https://anishambavat.github.io/partners/" target="_blank">PARTNERS</a></li>
+        </ul>
+    </nav>
+
+
+
+    <!--======Home Page (Tanmay)=======-->
+    <section class="parallax">
+        <img src="bg3.png" id="bg3">
+        <img src="Layer1.png" id="Layer1">
+        <img src="Layer2.png" id="Layer2">
+        <h2 id="text" class="title">Web Team</h2>
+    </section>
+
+
+    <script type="text/javascript">
+        // Parallax effect (Tanmay)
+        let bg = document.getElementById("bg1");
+        let lego = document.getElementById("bg2");
+        let moon = document.getElementById("moon");
+        let text = document.getElementById("text");
+
+        window.addEventListener('scroll', function () {
+            var value = window.scrollY;
+
+            bg3.style.top = value * 0.1 + 'px';
+            Layer2.style.top = value * 0.4 + 'px';
+            Layer1.style.top = value * 0.22 + 'px';
+            text.style.top = value * 1 + 'px';
+
+        })
+
+
+        // Pre loader (Yash Sharma)
+        const id$ = (id) => document.getElementById(id);
+        const q$ = (query) => document.querySelector(query);
+        document.onreadystatechange = function () {
+            let state = document.readyState;
+            if (state == 'interactive') { document.getElementsByClassName('body-inner').item(0).style.visibility = "hidden"; }
+            else if (state == 'complete') {
+                const loadTime = window.performance.timing.domContentLoadedEventEnd - window.performance.timing.navigationStart;
+                const THRESHOLD = 2500;
+                const MIN_LOAD_TIME = loadTime < THRESHOLD ? THRESHOLD : 0;
+                setTimeout(() => {
+                    id$('loader-container').style.visibility = "hidden";
+                    document.getElementsByClassName('body-inner').item(0).style.visibility = "visible";
+                }, MIN_LOAD_TIME);
+            }
+        }
+    </script>
+
+
+
+</body>
+
+</html>
