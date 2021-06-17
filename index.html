@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <!-- =====Pre Loader(Yash)===== -->
+    <!-- =====Pre Loader(Yash Sharma)===== -->
     <div id="loader-container"></div>
     <nav>
         <input type="checkbox" id="check">
@@ -29,7 +29,7 @@
 
 
 
-    <!--======Home Page (Tanmay)=======-->
+    <!--======Home Page (Tanmay Shah)=======-->
     <section class="parallax">
         <img src="bg3.png" id="bg3">
         <img src="Layer1.png" id="Layer1">
@@ -39,7 +39,7 @@
 
 
     <script type="text/javascript">
-        // Parallax effect (Tanmay)
+        // Parallax effect (Tanmay Shah)
         let bg = document.getElementById("bg1");
         let lego = document.getElementById("bg2");
         let moon = document.getElementById("moon");
@@ -54,6 +54,19 @@
             text.style.top = value * 1 + 'px';
 
         })
+        
+        // back to page-top on reload(Tanmay Shah)
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        }
+        // remove fragment as much as it can go without adding an entry in browser history:
+        window.location.replace("#");
+
+        // slice off the remaining '#' in HTML5:    
+        if (typeof window.history.replaceState == 'function') {
+            history.replaceState({}, '', window.location.href.slice(0, -1));
+        }
+
 
 
         // Pre loader (Yash Sharma)
