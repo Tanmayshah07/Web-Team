@@ -27,7 +27,6 @@ body::-webkit-scrollbar {
 /*Header*/
 h2.title{
  display: inline-block;
-
     position: relative;
     font-size: 3em;
     letter-spacing: 15px;
@@ -109,6 +108,7 @@ section img{
 }
 
 #text{
+      font-family: 'Times New Roman', Times, serif;
     position: relative;
     font-size: 6em;
     z-index: 0;
