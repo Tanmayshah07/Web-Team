@@ -3,15 +3,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Ubuntu', serif;
     text-decoration: none;
     list-style: armenian;
-    font-family: 'Ubuntu', sans-serif;
 }
 
 body{
-
     background: black;
     min-height: 3000px;
+    ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 /*To hide the scroll-bar*/
@@ -19,47 +20,44 @@ body::-webkit-scrollbar {
     display: none;
 }
 
-body {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
 
 
 /*==========================Tanmay Shah==========================*/
 
 /*Header*/
 h2.title{
-    font-family: 'Times New Roman', Times, serif;
+ display: inline-block;
+
     position: relative;
     font-size: 3em;
     letter-spacing: 15px;
-    color: #460606;
-    text-transform: uppercase;
+    color: #000000 ;
+   text-transform: uppercase;
     width: 100%;
     text-align: center; 
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
     line-height: 1em;
     outline: none;
     animation: animate 5s linear 1;
-   margin-bottom: 90vh;
+     margin-bottom: 90vh;
     
 }
 
 
 @keyframes animate {
 
-    0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92%{
-        color: #460606;
-        text-shadow: none;
+0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92%{
+      color: #000000;
+      text-shadow: none;
     }
     18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100%
     {
         color: rgb(255, 255, 255);
-        text-shadow: 0 0 10px #202020,
-        0 0 20px rgb(44, 44, 44),
-        0 0 40px rgb(46, 46, 46),
-        0 0 80px rgb(53, 53, 53),
-        0 0 160px rgb(49, 49, 49);
+        text-shadow: 0 0 10px #ff7b00,
+        0 0 20px #fd7a00,
+        0 0 40px #ff7b00,
+        0 0 80px #ff7b00,
+        0 0 160px #ff7b00;
 
     }
     
