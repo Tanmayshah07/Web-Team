@@ -38,7 +38,7 @@ h2.title{
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
     line-height: 1em;
     outline: none;
-    animation: animate 5s linear 1;
+    animation: animate 5s linear 2;
      margin-bottom: 90vh;
     
 }
