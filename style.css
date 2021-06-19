@@ -370,7 +370,8 @@ a {
 
 footer{ 
   font-family: 'Roboto', sans-serif;
-  background-color:#202124;
+/*   background-color:#202124; */
+    background-color: #201616;
   color:white;
   text-align: center;
   width: 100%;
