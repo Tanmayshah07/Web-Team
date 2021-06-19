@@ -139,8 +139,8 @@ nav{
     background: rgba(0, 0, 0,0);
     height: 60px;
     width: 100vw;
-    position: fixed;
-    z-index: 2;
+    position: absolute;
+    z-index: 222;
   }
 
   .ecell{
