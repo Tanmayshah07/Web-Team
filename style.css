@@ -391,7 +391,11 @@ a {
 }
 
 @media (pointer: none), (pointer: coarse){
-  /**/
+  .hov1, .hov2, .i1, .i2 {
+    transform: translateY(0px);
+    opacity: 1;
+    color: white;
+  }
 }
 
 /* -------------------------------------------------Footer------------------------------------------------- */
