@@ -1,0 +1,62 @@
+body{
+  background: #111;
+color: white;
+}
+.center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.glitch>div{
+  font-size: 80px;
+  text-transform: uppercase;
+}
+.glitch > div:nth-child(4) { 
+color: #f5f5f5;
+animation:moveDown 500ms ease-in-out infinite ;
+}
+@keyframes moveDown {
+  0%,100%{
+    transform: translate(-50%,-50%);
+  }
+  50% {
+    transform: translate(-50%,-48%);
+  }
+}
+.glitch > div:nth-child(3) { 
+  color: blue;
+  animation:moveUp 500ms ease-in-out infinite ;
+  }
+  @keyframes moveUp {
+    0%,100%{
+      transform: translate(-50%,-50%);
+    }
+    50% {
+      transform: translate(-50%,-52%);
+    }
+  }
+  .glitch > div:nth-child(2) { 
+    color:green;
+    animation:moveRight 500ms ease-in-out infinite ;
+    }
+    @keyframes moveRight {
+      0%,100%{
+        transform: translate(-50%,-50%);
+      }
+      50% {
+        transform: translate(-48%,-50%);
+      }
+    }
+    .glitch > div:nth-child(1) { 
+      color:red;
+      animation:moveLeft 500ms ease-in-out infinite ;
+      }
+      @keyframes moveLeft {
+        0%,100%{
+          transform: translate(-50%,-50%);
+        }
+        50% {
+          transform: translate(-52%,-50%);
+        }
+      }
